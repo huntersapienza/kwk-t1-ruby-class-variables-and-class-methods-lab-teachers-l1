@@ -8,7 +8,8 @@ class Song
   @@artists = []
   
   def self.artist_count
-    @@artists.count
+    each.@@artists do {}
+      
   end
   
   @@genres = []
