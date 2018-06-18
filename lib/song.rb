@@ -17,9 +17,9 @@ class Song
     @@genres.count
   end
 
-  def artists
-    @@artists
-  end
+  # def artists
+  #   @@artists
+  # end
   
   def initialize(name,artist,genre)
     @name = name
