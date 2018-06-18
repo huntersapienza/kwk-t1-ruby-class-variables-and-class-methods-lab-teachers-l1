@@ -37,6 +37,8 @@ class Song
     unique_genres = {}
     @@genres.each do |genre|
       if !unique_genres.has_key?("#genre")
+        unique_genres["#{genre}"] = 1 
+      else
         
   end
   
