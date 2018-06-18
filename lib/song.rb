@@ -18,7 +18,14 @@ class Song
   end
         
   def self.artist_count
-    each.@@artists do {}
+    unique_artists = {}
+    @@genres.each do |genre|
+      if !unique_genres.has_key?("#genre")
+        unique_genres["#{genre}"] = 1 
+      else
+        unique_genres["#{genre}"] += 1 
+      end
+    end
   end
   
   @@genres = []
