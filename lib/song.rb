@@ -49,6 +49,7 @@ class Song
         unique_genres["#{genre}"] += 1 
       end
     end
+    unique_genres
   end
   
   def initialize(name,artist,genre)
