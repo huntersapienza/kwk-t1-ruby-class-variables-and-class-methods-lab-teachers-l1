@@ -13,6 +13,10 @@ class Song
   
   @@genres = []
   
+  def self.genres_count
+    @@genres.count
+  end
+
   def artists
     @@artists
   end
