@@ -9,10 +9,19 @@ class Song
   
   def self.artist_count
     each.@@artists do {}
-      
   end
   
   @@genres = []
+  
+  def self.genres 
+    noduplicates = []
+    @@genres.each do |genre|
+      if !noduplicates.include?(genre)
+        noduplicates.push(genre)
+      end 
+    end 
+    noduplicates 
+  end 
   
   def self.genre_count
     @@genres.count
