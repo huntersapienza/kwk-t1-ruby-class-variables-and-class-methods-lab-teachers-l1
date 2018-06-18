@@ -20,7 +20,7 @@ class Song
   def self.artist_count
     unique_artists = {}
     @@artists.each do |artist|
-      if !unique_artists.has_key?("#artist")
+      if !unique_artists.has_key?("#{artist}")
         unique_artists["#{artist}"] = 1 
       else
         unique_artists["#{artist}"] += 1 
@@ -44,7 +44,7 @@ class Song
   def self.genre_count
     unique_genres = {}
     @@genres.each do |genre|
-      if !unique_genres.has_key?("#genre")
+      if !unique_genres.has_key?("#{genre}")
         unique_genres["#{genre}"] = 1 
       else
         unique_genres["#{genre}"] += 1 
