@@ -34,7 +34,8 @@ class Song
   end 
   
   def self.genre_count
-    @@genres.count
+    unique_genres = {}
+    
   end
   
   def initialize(name,artist,genre)
