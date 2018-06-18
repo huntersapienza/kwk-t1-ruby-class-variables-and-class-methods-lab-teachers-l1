@@ -26,6 +26,7 @@ class Song
         unique_artists["#{artist}"] += 1 
       end
     end
+    unique_artists
   end
   
   @@genres = []
