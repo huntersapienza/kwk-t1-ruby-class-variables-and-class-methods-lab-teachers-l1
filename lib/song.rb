@@ -7,6 +7,16 @@ class Song
   
   @@artists = []
   
+  def self.artists
+    noduplicates = []
+    @@artists.each do |artist|
+      if !noduplicates.include?(artist)
+        noduplicates.push(artist)
+      end
+    end
+    noduplicates
+  end
+        
   def self.artist_count
     each.@@artists do {}
   end
