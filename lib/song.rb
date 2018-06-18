@@ -19,11 +19,11 @@ class Song
         
   def self.artist_count
     unique_artists = {}
-    @@genres.each do |genre|
-      if !unique_genres.has_key?("#genre")
-        unique_genres["#{genre}"] = 1 
+    @@artists.each do |artist|
+      if !unique_artists.has_key?("#artist")
+        unique_artists["#{artist}"] = 1 
       else
-        unique_genres["#{genre}"] += 1 
+        unique_artists["#{artist}"] += 1 
       end
     end
   end
