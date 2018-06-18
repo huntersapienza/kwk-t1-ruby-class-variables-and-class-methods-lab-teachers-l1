@@ -39,7 +39,7 @@ class Song
       if !unique_genres.has_key?("#genre")
         unique_genres["#{genre}"] = 1 
       else
-        unique_genres["#{genre}"] = 1 
+        unique_genres["#{genre}"] += 1 
   end
   
   def initialize(name,artist,genre)
