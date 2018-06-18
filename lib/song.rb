@@ -35,7 +35,8 @@ class Song
   
   def self.genre_count
     unique_genres = {}
-    @@genres.each do 
+    @@genres.each do |genre|
+      if unique_genres.has_key?(genre)
   end
   
   def initialize(name,artist,genre)
