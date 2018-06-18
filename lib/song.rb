@@ -28,8 +28,8 @@ class Song
     @genre = genre
     
     @@count += 1
-    @@artists.push(artist_count)
-    @@genres.push(genre_count)
+    @@artists.push(self.artist)
+    @@genres.push(self.genre)
   end
   
   def name
